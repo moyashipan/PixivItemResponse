@@ -1,0 +1,38 @@
+div#moyashipan{
+	min-height:64px;
+	margin-top:30px;
+	margin-bottom:25px;
+	padding:0px 20px 0px 20px;
+}
+
+span.item{
+	width: 64px;
+	min-height: 64px;
+	background-color: #f0f0f0;
+	display: inline-block;
+	margin-left: 10px;
+	position: relative;
+}
+span.item:first-child{
+	margin-left: 8px;
+}
+
+a.image{
+	position: absolute;
+}
+a.image img{
+	width:64px;
+	height:64px;
+}
+
+a.user_icon{
+	position: absolute;
+	bottom: -4px;
+	left: -4px;
+}
+
+a.user_icon img{
+	background-color: #ffffff;
+	width: 30px;
+	height: 30px;
+}
