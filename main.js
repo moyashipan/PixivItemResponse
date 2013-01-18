@@ -14,8 +14,7 @@ setTimeout(function(){
 	if (pixivUser == undefined || !pixivUser.loggedIn) return;
 
 	var pixivContext = proxy.data('pixivcontext');
-	if (pixivContext == undefined || !pixivContext.illustId || pixivContext.queries.mode == 'medium') return;
-
+	if (pixivContext == undefined || !pixivContext.illustId || !pixivContext.queries.mode == 'medium') return;
 	var tpl = '<div id="moyashipan"><div class="items"></div></div>';
 	var itemTpl = '<span class="item"><a class="image" href="/"><img src="http://source.pixiv.net/source/images/no_profile_s.png"></a><a class="user_icon ui-tooltip" data-tooltip="ほげユーザー" href="/member.php?id=11"><img src="http://source.pixiv.net/source/images/no_profile_s.png"></a></span>';
 	var memberPageUrl = 'http://www.pixiv.net/member.php?id=';
